@@ -1,4 +1,4 @@
-package com.models;
+package models;
 
 import com.sun.istack.NotNull;
 import lombok.*;
@@ -16,10 +16,10 @@ import java.time.LocalDateTime;
 @Builder
 @ToString
 @Entity
-public class User {
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
 
     @NotEmpty(message = "mandatoryParametersMissing")
     @NotNull
